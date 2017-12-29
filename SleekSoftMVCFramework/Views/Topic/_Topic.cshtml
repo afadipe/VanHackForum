@@ -1,0 +1,34 @@
+﻿
+@model SleekSoftMVCFramework.ViewModel.TopicViewModel
+@using SleekSoftMVCFramework.Utilities
+
+<div class="post">
+    <div class="user-block">
+        @if (Model.LastPost.Avatar == null)
+        {
+            <img class="img-circle img-bordered-sm" src="@Url.Content("~/img/user2-160x160.jpg")" alt="@Model.LastPost.UserName" >
+        }
+        else if (Model.LastPost.Avatar != null)
+        {
+            <img class="img-circle img-bordered-sm" src="@Url.Content("~/FileUploadedDoc/" + Model.LastPost.Avatar)" alt="@Model.LastPost.UserName" >
+        }
+        <span class="username">
+            <a href="#">@Model.LastPost.UserName</a>
+        </span>
+        <span class="description">Latest By @Model.LastPost.UserName @Html.Raw(@ExtentionUtility.GetPrettyDate(Model.LastPost.DatePosted))</span>
+    </div>
+    <p><small><b>Category  </b></small><span class="label label-success">@Model.TopicCategory</span></p>
+    <!-- /.user-block -->
+    <a href="@Url.Action("Index","Post", new { code = @ExtentionUtility.EncryptIntID(@Model.Id.GetValueOrDefault()) } )"><p>@Model.Title</p></a>
+   
+    <ul class="list-inline">
+        <li><a href="" class="link-black text-sm"><i class="fa fa-eye margin-r-5"></i> View (@Model.TopicView.GetValueOrDefault())</a></li>
+        <li class="pull-right">
+            <a href="#" class="link-black text-sm">
+                <i class="fa fa-comments-o margin-r-5"></i> Comments
+                (@Model.NoOfPost.GetValueOrDefault())
+            </a>
+        </li>
+    </ul>
+</div>
+

@@ -1,0 +1,64 @@
+﻿@model SleekSoftMVCFramework.ViewModel.UserVm
+@{
+    Layout = "~/Views/Shared/_APPLoginPartial.cshtml";
+    ViewBag.Title = "Register";
+}
+
+@Html.Partial("_ToastrViewHeader")
+
+<div class="register-box-body">
+    <p class="login-box-msg">Register a new membership</p>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>Create a new account.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+        <div class="form-group has-feedback">
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeholder = "FirstName" })
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group has-feedback">
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeholder = "FirstName" })
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+        </div>
+        
+
+        <div class="form-group has-feedback">
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "UserName" })
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group has-feedback">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email Address" })
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+        </div>
+
+        <small>Profile Avatar</small>
+        <div class="form-group">
+            <input type="file" name="profileImage">
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+            </div>
+            <!-- /.col -->
+        </div>
+    }
+
+</div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

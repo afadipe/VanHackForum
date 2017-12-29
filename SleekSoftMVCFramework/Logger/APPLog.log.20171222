@@ -1,0 +1,701 @@
+INFO  2017-12-22 07:30:33,642   169ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 07:30:33 >>>>>>
+INFO  2017-12-22 07:30:35,705  2231ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 07:30:35 >>>>>>
+INFO  2017-12-22 07:30:35,951  2477ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 07:30:36,466  2993ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 07:30:36,525  3052ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 07:30:36,533  3060ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 07:30:36,534  3061ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 07:30:36,534  3061ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 07:30:36,534  3061ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 07:30:36,535  3062ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 07:30:36,535  3062ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 07:30:36,536  3063ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 07:30:36,536  3063ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 07:30:36,599  3126ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 07:30:37,078  3604ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 07:30:37,128  3654ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 07:30:37,176  3702ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 07:30:37,182  3708ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 07:30:37,225  3751ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 07:30:37,230  3756ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 07:30:37,240  3766ms Worker                 CallSite.Target    - Background process 'Worker #d7acd07d' started.
+DEBUG 2017-12-22 07:30:37,282  3808ms Worker                 CallSite.Target    - Background process 'Worker #07343275' started.
+DEBUG 2017-12-22 07:30:37,310  3836ms Worker                 CallSite.Target    - Background process 'Worker #5f68542c' started.
+DEBUG 2017-12-22 07:30:37,418  3944ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 07:30:37,480  4006ms Worker                 CallSite.Target    - Background process 'Worker #6da3343c' started.
+DEBUG 2017-12-22 07:30:37,505  4031ms Worker                 CallSite.Target    - Background process 'Worker #05f4a5d8' started.
+DEBUG 2017-12-22 07:30:37,547  4073ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 07:30:37,547  4073ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 07:30:37,560  4086ms Worker                 CallSite.Target    - Background process 'Worker #b683718d' started.
+DEBUG 2017-12-22 07:30:37,601  4127ms Worker                 CallSite.Target    - Background process 'Worker #abf346dd' started.
+DEBUG 2017-12-22 07:30:37,657  4183ms Worker                 CallSite.Target    - Background process 'Worker #476d3ba9' started.
+DEBUG 2017-12-22 07:30:37,733  4260ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 07:30:37,734  4261ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 07:30:37,734  4261ms Worker                 CallSite.Target    - Background process 'Worker #7c4c0431' started.
+DEBUG 2017-12-22 07:30:37,775  4302ms Worker                 CallSite.Target    - Background process 'Worker #d2e7f867' started.
+DEBUG 2017-12-22 07:30:37,808  4335ms Worker                 CallSite.Target    - Background process 'Worker #da503c37' started.
+DEBUG 2017-12-22 07:30:37,879  4406ms Worker                 CallSite.Target    - Background process 'Worker #7c141b06' started.
+DEBUG 2017-12-22 07:30:37,946  4473ms Worker                 CallSite.Target    - Background process 'Worker #901c7c38' started.
+DEBUG 2017-12-22 07:30:37,967  4494ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 07:30:37,969  4496ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 07:30:38,016  4543ms Worker                 CallSite.Target    - Background process 'Worker #b62c1218' started.
+DEBUG 2017-12-22 07:30:38,048  4575ms Worker                 CallSite.Target    - Background process 'Worker #d6e7bbc1' started.
+DEBUG 2017-12-22 07:30:38,090  4617ms Worker                 CallSite.Target    - Background process 'Worker #2784f271' started.
+DEBUG 2017-12-22 07:30:38,161  4688ms Worker                 CallSite.Target    - Background process 'Worker #86d6a11d' started.
+DEBUG 2017-12-22 07:30:38,230  4757ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 07:30:38,230  4757ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 07:30:38,233  4759ms Worker                 CallSite.Target    - Background process 'Worker #3a023d2c' started.
+DEBUG 2017-12-22 07:30:38,276  4802ms Worker                 CallSite.Target    - Background process 'Worker #b5b3c999' started.
+DEBUG 2017-12-22 07:30:38,336  4862ms Worker                 CallSite.Target    - Background process 'Worker #bd750449' started.
+DEBUG 2017-12-22 07:30:38,418  4944ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 07:30:38,429  4955ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+DEBUG 2017-12-22 07:30:38,431  4957ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+INFO  2017-12-22 07:30:39,520  6047ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 07:30:39
+ERROR 2017-12-22 07:30:40,901  7428ms tyLogRepositoryCommand CreateActivityLog  - System.InvalidOperationException: The model backing the 'APPContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity)
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record)
+ERROR 2017-12-22 07:30:41,347  7873ms meworkConfigController Index              - System.InvalidOperationException: The model backing the 'APPContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.AsNoTracking()
+   at System.Data.Entity.Infrastructure.DbQuery`1.AsNoTracking()
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryQuery`2.GetAll()
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryQuery`2.Count()
+   at SleekSoftMVCFramework.Controllers.FrameworkConfigController.Index() in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework\Controllers\FrameworkConfigController.cs:line 36
+INFO  2017-12-22 07:31:00,740 27267ms HangFireLoggerAppender OnCreating         - Creating a job based on method `Execute`...
+INFO  2017-12-22 07:31:01,010 27536ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `` was unapplied.
+INFO  2017-12-22 07:31:01,015 27541ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from  to Enqueued
+INFO  2017-12-22 07:31:01,323 27849ms HangFireLoggerAppender OnCreated          - Job that is based on method `Execute` has been created with id `1`
+INFO  2017-12-22 07:31:01,591 28117ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `Enqueued` was unapplied.
+INFO  2017-12-22 07:31:01,592 28118ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from Enqueued to Processing
+INFO  2017-12-22 07:31:01,868 28395ms HangFireLoggerAppender OnPerforming       - Starting to perform job `1`
+INFO  2017-12-22 07:42:12,285   634ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 07:42:12 >>>>>>
+INFO  2017-12-22 07:42:13,663  2012ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 07:42:13 >>>>>>
+INFO  2017-12-22 07:42:16,645  4994ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 07:42:16,838  5187ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 07:42:16,906  5255ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 07:42:16,916  5265ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 07:42:16,918  5267ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 07:42:16,918  5267ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 07:42:16,919  5268ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 07:42:16,919  5268ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 07:42:16,920  5269ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 07:42:16,920  5269ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 07:42:16,921  5270ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 07:42:16,963  5312ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 07:42:17,345  5695ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 07:42:17,433  5783ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 07:42:17,548  5898ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+INFO  2017-12-22 07:42:17,583  5933ms ServerWatchdog         CallSite.Target    - 1 servers were removed due to timeout
+DEBUG 2017-12-22 07:42:17,623  5973ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 07:42:17,625  5975ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 07:42:17,637  5987ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 07:42:17,655  6005ms Worker                 CallSite.Target    - Background process 'Worker #41c15001' started.
+DEBUG 2017-12-22 07:42:17,781  6131ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 07:42:17,794  6144ms Worker                 CallSite.Target    - Background process 'Worker #b7c74365' started.
+DEBUG 2017-12-22 07:42:17,806  6156ms Worker                 CallSite.Target    - Background process 'Worker #a9696f3d' started.
+DEBUG 2017-12-22 07:42:17,845  6194ms Worker                 CallSite.Target    - Background process 'Worker #e0cb20d0' started.
+DEBUG 2017-12-22 07:42:17,941  6290ms Worker                 CallSite.Target    - Background process 'Worker #87f1dca4' started.
+DEBUG 2017-12-22 07:42:18,024  6373ms Worker                 CallSite.Target    - Background process 'Worker #2a8d32e2' started.
+DEBUG 2017-12-22 07:42:18,115  6464ms Worker                 CallSite.Target    - Background process 'Worker #07be9a79' started.
+DEBUG 2017-12-22 07:42:18,148  6497ms Worker                 CallSite.Target    - Background process 'Worker #36bd2c09' started.
+DEBUG 2017-12-22 07:42:18,214  6563ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 07:42:18,214  6563ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 07:42:18,273  6622ms Worker                 CallSite.Target    - Background process 'Worker #774924d5' started.
+DEBUG 2017-12-22 07:42:18,295  6644ms Worker                 CallSite.Target    - Background process 'Worker #034df836' started.
+DEBUG 2017-12-22 07:42:18,402  6751ms Worker                 CallSite.Target    - Background process 'Worker #8aae8aa9' started.
+DEBUG 2017-12-22 07:42:18,433  6782ms Worker                 CallSite.Target    - Background process 'Worker #a1ba3328' started.
+DEBUG 2017-12-22 07:42:18,484  6833ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 07:42:18,485  6834ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 07:42:18,495  6844ms Worker                 CallSite.Target    - Background process 'Worker #657be345' started.
+DEBUG 2017-12-22 07:42:18,565  6914ms Worker                 CallSite.Target    - Background process 'Worker #fb6ea396' started.
+DEBUG 2017-12-22 07:42:18,691  7041ms Worker                 CallSite.Target    - Background process 'Worker #34a7074f' started.
+DEBUG 2017-12-22 07:42:18,812  7162ms Worker                 CallSite.Target    - Background process 'Worker #af0bc424' started.
+DEBUG 2017-12-22 07:42:18,813  7163ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 07:42:18,813  7163ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 07:42:18,862  7212ms Worker                 CallSite.Target    - Background process 'Worker #bf3ed00d' started.
+DEBUG 2017-12-22 07:42:18,967  7317ms Worker                 CallSite.Target    - Background process 'Worker #7ba28c0f' started.
+DEBUG 2017-12-22 07:42:18,972  7322ms Worker                 CallSite.Target    - Background process 'Worker #5c0e4ca5' started.
+DEBUG 2017-12-22 07:42:19,080  7430ms Worker                 CallSite.Target    - Background process 'Worker #a98fbe29' started.
+DEBUG 2017-12-22 07:42:19,088  7438ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 07:42:19,089  7439ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 07:42:19,205  7555ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 07:42:19,245  7594ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-12-22 07:42:19,330  7679ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+INFO  2017-12-22 07:42:19,451  7800ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `Processing` was unapplied.
+INFO  2017-12-22 07:42:19,454  7803ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from Processing to Processing
+INFO  2017-12-22 07:42:19,634  7983ms HangFireLoggerAppender OnPerforming       - Starting to perform job `1`
+INFO  2017-12-22 07:42:24,492 12842ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 07:42:24
+INFO  2017-12-22 07:44:58,361   203ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 07:44:58 >>>>>>
+INFO  2017-12-22 07:44:59,309  1151ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 07:44:59 >>>>>>
+INFO  2017-12-22 07:45:00,682  2524ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 07:45:00,984  2827ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 07:45:01,040  2883ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 07:45:01,047  2890ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 07:45:01,050  2892ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 07:45:01,051  2893ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 07:45:01,051  2893ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 07:45:01,051  2893ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 07:45:01,052  2894ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 07:45:01,053  2895ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 07:45:01,053  2895ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 07:45:01,097  2939ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 07:45:01,467  3309ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 07:45:01,498  3340ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 07:45:01,534  3376ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 07:45:01,561  3403ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 07:45:01,587  3429ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 07:45:01,608  3450ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 07:45:01,629  3471ms Worker                 CallSite.Target    - Background process 'Worker #5351ccde' started.
+DEBUG 2017-12-22 07:45:01,692  3534ms Worker                 CallSite.Target    - Background process 'Worker #5afcd963' started.
+DEBUG 2017-12-22 07:45:01,700  3542ms Worker                 CallSite.Target    - Background process 'Worker #7ae6cd9c' started.
+DEBUG 2017-12-22 07:45:01,727  3569ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 07:45:01,732  3574ms Worker                 CallSite.Target    - Background process 'Worker #62c922a1' started.
+DEBUG 2017-12-22 07:45:01,868  3710ms Worker                 CallSite.Target    - Background process 'Worker #458c185d' started.
+DEBUG 2017-12-22 07:45:01,973  3815ms Worker                 CallSite.Target    - Background process 'Worker #d597ea4a' started.
+DEBUG 2017-12-22 07:45:02,013  3855ms Worker                 CallSite.Target    - Background process 'Worker #75292ca9' started.
+DEBUG 2017-12-22 07:45:02,076  3918ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 07:45:02,076  3918ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 07:45:02,078  3920ms Worker                 CallSite.Target    - Background process 'Worker #7d35df3b' started.
+DEBUG 2017-12-22 07:45:02,122  3964ms Worker                 CallSite.Target    - Background process 'Worker #0853dd68' started.
+DEBUG 2017-12-22 07:45:02,165  4007ms Worker                 CallSite.Target    - Background process 'Worker #0cc52c95' started.
+DEBUG 2017-12-22 07:45:02,229  4071ms Worker                 CallSite.Target    - Background process 'Worker #45eab9d6' started.
+DEBUG 2017-12-22 07:45:02,293  4135ms Worker                 CallSite.Target    - Background process 'Worker #ec9d88f3' started.
+DEBUG 2017-12-22 07:45:02,342  4184ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 07:45:02,342  4184ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 07:45:02,342  4184ms Worker                 CallSite.Target    - Background process 'Worker #9e6a873b' started.
+DEBUG 2017-12-22 07:45:02,387  4230ms Worker                 CallSite.Target    - Background process 'Worker #63b8d30f' started.
+DEBUG 2017-12-22 07:45:02,443  4286ms Worker                 CallSite.Target    - Background process 'Worker #bc03a1d5' started.
+DEBUG 2017-12-22 07:45:02,539  4381ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 07:45:02,540  4382ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 07:45:02,541  4383ms Worker                 CallSite.Target    - Background process 'Worker #1860385a' started.
+DEBUG 2017-12-22 07:45:02,650  4492ms Worker                 CallSite.Target    - Background process 'Worker #7d366ae4' started.
+DEBUG 2017-12-22 07:45:02,695  4537ms Worker                 CallSite.Target    - Background process 'Worker #c1800add' started.
+DEBUG 2017-12-22 07:45:02,778  4620ms Worker                 CallSite.Target    - Background process 'Worker #b6dfa71d' started.
+DEBUG 2017-12-22 07:45:02,778  4620ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 07:45:02,778  4620ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 07:45:02,852  4694ms Worker                 CallSite.Target    - Background process 'Worker #a8899d6b' started.
+DEBUG 2017-12-22 07:45:02,905  4747ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 07:45:02,933  4775ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-12-22 07:45:03,001  4843ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+INFO  2017-12-22 07:45:11,853 13695ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 07:45:11
+ERROR 2017-12-22 07:45:15,330 17172ms tyLogRepositoryCommand CreateActivityLog  - System.InvalidOperationException: The model backing the 'APPContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity)
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record)
+INFO  2017-12-22 08:16:38,258   188ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:16:38 >>>>>>
+INFO  2017-12-22 08:16:39,880  1810ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:16:39 >>>>>>
+INFO  2017-12-22 08:16:40,099  2029ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:16:40,425  2355ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:16:40,479  2409ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:16:40,487  2417ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:16:40,488  2418ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:16:40,488  2418ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:16:40,489  2419ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:16:40,489  2419ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:16:40,490  2420ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:16:40,491  2421ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:16:40,491  2421ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:16:40,526  2456ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:16:41,060  2990ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:16:41,131  3061ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 08:16:41,153  3083ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:16:41,158  3088ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:16:41,188  3118ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:16:41,192  3122ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 08:16:41,282  3212ms Worker                 CallSite.Target    - Background process 'Worker #056ab889' started.
+DEBUG 2017-12-22 08:16:41,282  3212ms Worker                 CallSite.Target    - Background process 'Worker #f5ad95b8' started.
+DEBUG 2017-12-22 08:16:41,322  3252ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:16:41,378  3308ms Worker                 CallSite.Target    - Background process 'Worker #4382664c' started.
+DEBUG 2017-12-22 08:16:41,513  3443ms Worker                 CallSite.Target    - Background process 'Worker #1204407e' started.
+DEBUG 2017-12-22 08:16:41,517  3447ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:16:41,518  3448ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:16:41,529  3459ms Worker                 CallSite.Target    - Background process 'Worker #1593d47f' started.
+DEBUG 2017-12-22 08:16:41,581  3511ms Worker                 CallSite.Target    - Background process 'Worker #f24a6e81' started.
+DEBUG 2017-12-22 08:16:41,638  3568ms Worker                 CallSite.Target    - Background process 'Worker #d7046539' started.
+DEBUG 2017-12-22 08:16:41,695  3625ms Worker                 CallSite.Target    - Background process 'Worker #a8efdda7' started.
+DEBUG 2017-12-22 08:16:41,709  3639ms Worker                 CallSite.Target    - Background process 'Worker #a9e46520' started.
+DEBUG 2017-12-22 08:16:41,782  3712ms Worker                 CallSite.Target    - Background process 'Worker #623a2872' started.
+DEBUG 2017-12-22 08:16:41,817  3747ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:16:41,819  3749ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:16:41,842  3772ms Worker                 CallSite.Target    - Background process 'Worker #05e736a2' started.
+DEBUG 2017-12-22 08:16:41,895  3825ms Worker                 CallSite.Target    - Background process 'Worker #e1da4246' started.
+DEBUG 2017-12-22 08:16:41,967  3897ms Worker                 CallSite.Target    - Background process 'Worker #8dcefdf4' started.
+DEBUG 2017-12-22 08:16:42,043  3973ms Worker                 CallSite.Target    - Background process 'Worker #9838de2a' started.
+DEBUG 2017-12-22 08:16:42,045  3975ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:16:42,047  3977ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:16:42,088  4018ms Worker                 CallSite.Target    - Background process 'Worker #4031ee5e' started.
+DEBUG 2017-12-22 08:16:42,133  4063ms Worker                 CallSite.Target    - Background process 'Worker #ca87a8d7' started.
+DEBUG 2017-12-22 08:16:42,184  4114ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:16:42,185  4115ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:16:42,202  4132ms Worker                 CallSite.Target    - Background process 'Worker #84efcb09' started.
+DEBUG 2017-12-22 08:16:42,298  4229ms Worker                 CallSite.Target    - Background process 'Worker #a00250e8' started.
+DEBUG 2017-12-22 08:16:42,341  4272ms Worker                 CallSite.Target    - Background process 'Worker #d4aa0050' started.
+DEBUG 2017-12-22 08:16:42,385  4315ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+DEBUG 2017-12-22 08:16:42,390  4320ms Worker                 CallSite.Target    - Background process 'Worker #b83c2f01' started.
+DEBUG 2017-12-22 08:16:42,393  4323ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:16:42,513  4443ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+INFO  2017-12-22 08:18:14,645 96575ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 08:18:14
+ERROR 2017-12-22 08:18:22,835 104765ms tyLogRepositoryCommand CreateActivityLog  - System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteSql(MigrationStatement migrationStatement, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinTransaction(IEnumerable`1 migrationStatements, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinNewTransaction(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClass30.<ExecuteStatements>b__2e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements, DbTransaction existingTransaction)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteOperations(String migrationId, VersionedModel targetModel, IEnumerable`1 operations, IEnumerable`1 systemOperations, Boolean downgrading, Boolean auto)
+   at System.Data.Entity.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration)
+   at System.Data.Entity.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId)
+   at System.Data.Entity.Migrations.DbMigrator.UpdateInternal(String targetMigration)
+   at System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClassc.<Update>b__b()
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)
+   at System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)
+   at System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity)
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record)
+ClientConnectionId:0f1915cf-fc73-41f0-8271-5d00cf25aad3
+Error Number:102,State:1,Class:15
+INFO  2017-12-22 08:21:09,521   205ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:21:09 >>>>>>
+INFO  2017-12-22 08:21:10,472  1155ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:21:10 >>>>>>
+INFO  2017-12-22 08:21:11,883  2566ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:21:12,074  2757ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:21:12,143  2827ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:21:12,150  2834ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:21:12,151  2835ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:21:12,151  2835ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:21:12,152  2836ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:21:12,153  2837ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:21:12,154  2838ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:21:12,154  2838ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:21:12,155  2839ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:21:12,188  2872ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:21:12,651  3334ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:21:12,704  3387ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 08:21:12,747  3430ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:21:12,754  3437ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:21:12,808  3491ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:21:12,850  3533ms Worker                 CallSite.Target    - Background process 'Worker #c8817ced' started.
+DEBUG 2017-12-22 08:21:12,850  3533ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 08:21:12,915  3598ms Worker                 CallSite.Target    - Background process 'Worker #2a139aef' started.
+DEBUG 2017-12-22 08:21:13,027  3710ms Worker                 CallSite.Target    - Background process 'Worker #fc2f47bc' started.
+DEBUG 2017-12-22 08:21:13,047  3730ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:21:13,088  3771ms Worker                 CallSite.Target    - Background process 'Worker #0982fc5a' started.
+DEBUG 2017-12-22 08:21:13,147  3830ms Worker                 CallSite.Target    - Background process 'Worker #6c5b6a45' started.
+DEBUG 2017-12-22 08:21:13,330  4013ms Worker                 CallSite.Target    - Background process 'Worker #f06cda2a' started.
+DEBUG 2017-12-22 08:21:13,389  4072ms Worker                 CallSite.Target    - Background process 'Worker #1a7d656a' started.
+DEBUG 2017-12-22 08:21:13,541  4225ms Worker                 CallSite.Target    - Background process 'Worker #5d3aff20' started.
+DEBUG 2017-12-22 08:21:13,542  4226ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:21:13,542  4226ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:21:13,618  4302ms Worker                 CallSite.Target    - Background process 'Worker #69177cbf' started.
+DEBUG 2017-12-22 08:21:13,657  4341ms Worker                 CallSite.Target    - Background process 'Worker #de71b623' started.
+DEBUG 2017-12-22 08:21:13,744  4428ms Worker                 CallSite.Target    - Background process 'Worker #3a4962e6' started.
+DEBUG 2017-12-22 08:21:13,838  4522ms Worker                 CallSite.Target    - Background process 'Worker #3a643f4d' started.
+DEBUG 2017-12-22 08:21:13,850  4534ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:21:13,850  4534ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:21:13,852  4536ms Worker                 CallSite.Target    - Background process 'Worker #2dc1db68' started.
+DEBUG 2017-12-22 08:21:13,956  4640ms Worker                 CallSite.Target    - Background process 'Worker #8af62626' started.
+DEBUG 2017-12-22 08:21:14,001  4684ms Worker                 CallSite.Target    - Background process 'Worker #5bb91bcb' started.
+DEBUG 2017-12-22 08:21:14,075  4758ms Worker                 CallSite.Target    - Background process 'Worker #cfb10f1e' started.
+DEBUG 2017-12-22 08:21:14,117  4800ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:21:14,119  4802ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:21:14,121  4804ms Worker                 CallSite.Target    - Background process 'Worker #a1566054' started.
+DEBUG 2017-12-22 08:21:14,162  4845ms Worker                 CallSite.Target    - Background process 'Worker #1c88436d' started.
+DEBUG 2017-12-22 08:21:14,238  4921ms Worker                 CallSite.Target    - Background process 'Worker #6955da98' started.
+DEBUG 2017-12-22 08:21:14,318  5001ms Worker                 CallSite.Target    - Background process 'Worker #526c0b26' started.
+DEBUG 2017-12-22 08:21:14,361  5044ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:21:14,361  5044ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:21:14,364  5047ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:21:14,405  5088ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-12-22 08:21:14,475  5158ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+INFO  2017-12-22 08:26:51,930   165ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:26:51 >>>>>>
+INFO  2017-12-22 08:26:53,939  2174ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:26:53 >>>>>>
+INFO  2017-12-22 08:26:54,241  2476ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:26:54,387  2622ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:26:54,450  2685ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:26:54,456  2691ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:26:54,457  2692ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:26:54,458  2693ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:26:54,458  2693ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:26:54,458  2693ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:26:54,459  2694ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:26:54,459  2694ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:26:54,460  2695ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:26:54,512  2747ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:26:54,884  3119ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:26:54,912  3147ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+INFO  2017-12-22 08:26:54,934  3169ms ServerWatchdog         CallSite.Target    - 2 servers were removed due to timeout
+DEBUG 2017-12-22 08:26:54,938  3173ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:26:54,943  3178ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:26:55,106  3341ms Worker                 CallSite.Target    - Background process 'Worker #53d37cee' started.
+DEBUG 2017-12-22 08:26:55,107  3342ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:26:55,112  3347ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 08:26:55,138  3373ms Worker                 CallSite.Target    - Background process 'Worker #4a4720c5' started.
+DEBUG 2017-12-22 08:26:55,233  3468ms Worker                 CallSite.Target    - Background process 'Worker #5c847e38' started.
+DEBUG 2017-12-22 08:26:55,234  3469ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:26:55,313  3548ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:26:55,313  3548ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:26:55,315  3550ms Worker                 CallSite.Target    - Background process 'Worker #e0ccd56e' started.
+DEBUG 2017-12-22 08:26:55,383  3618ms Worker                 CallSite.Target    - Background process 'Worker #a742d548' started.
+DEBUG 2017-12-22 08:26:55,437  3672ms Worker                 CallSite.Target    - Background process 'Worker #e66e35fe' started.
+DEBUG 2017-12-22 08:26:55,527  3762ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:26:55,527  3762ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:26:55,551  3786ms Worker                 CallSite.Target    - Background process 'Worker #b161b680' started.
+DEBUG 2017-12-22 08:26:55,572  3807ms Worker                 CallSite.Target    - Background process 'Worker #ab223166' started.
+DEBUG 2017-12-22 08:26:55,663  3898ms Worker                 CallSite.Target    - Background process 'Worker #bee1da8c' started.
+DEBUG 2017-12-22 08:26:55,704  3939ms Worker                 CallSite.Target    - Background process 'Worker #cef37ade' started.
+DEBUG 2017-12-22 08:26:55,770  4005ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:26:55,771  4006ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:26:55,818  4053ms Worker                 CallSite.Target    - Background process 'Worker #ae056a36' started.
+DEBUG 2017-12-22 08:26:55,887  4122ms Worker                 CallSite.Target    - Background process 'Worker #b1c826ab' started.
+DEBUG 2017-12-22 08:26:55,938  4173ms Worker                 CallSite.Target    - Background process 'Worker #aa957f87' started.
+DEBUG 2017-12-22 08:26:55,960  4195ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:26:55,961  4196ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:26:56,030  4265ms Worker                 CallSite.Target    - Background process 'Worker #da6ea157' started.
+DEBUG 2017-12-22 08:26:56,080  4315ms Worker                 CallSite.Target    - Background process 'Worker #915c21bb' started.
+DEBUG 2017-12-22 08:26:56,152  4387ms Worker                 CallSite.Target    - Background process 'Worker #958d9507' started.
+DEBUG 2017-12-22 08:26:56,197  4432ms Worker                 CallSite.Target    - Background process 'Worker #113b16f6' started.
+DEBUG 2017-12-22 08:26:56,257  4492ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+DEBUG 2017-12-22 08:26:56,274  4509ms Worker                 CallSite.Target    - Background process 'Worker #2535891f' started.
+DEBUG 2017-12-22 08:26:56,275  4510ms Worker                 CallSite.Target    - Background process 'Worker #52c3da92' started.
+DEBUG 2017-12-22 08:26:56,352  4587ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:26:56,360  4595ms Worker                 CallSite.Target    - Background process 'Worker #5e093940' started.
+DEBUG 2017-12-22 08:26:56,434  4669ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+INFO  2017-12-22 08:27:01,347  9582ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 08:27:01
+ERROR 2017-12-22 08:27:05,182 13417ms tyLogRepositoryCommand CreateActivityLog  - System.InvalidOperationException: The model backing the 'APPContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\CoreRepositories\RepositoryCommand.cs:line 96
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\Service\ActivityLogRepositoryCommand.cs:line 93
+INFO  2017-12-22 08:31:03,378   213ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:31:03 >>>>>>
+INFO  2017-12-22 08:31:05,282  2116ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:31:05 >>>>>>
+INFO  2017-12-22 08:31:05,551  2385ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:31:05,733  2567ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:31:05,792  2626ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:31:05,798  2632ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:31:05,798  2632ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:31:05,799  2633ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:31:05,800  2634ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:31:05,800  2634ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:31:05,801  2635ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:31:05,801  2635ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:31:05,802  2636ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:31:05,837  2671ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:31:06,294  3129ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:31:06,336  3171ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 08:31:06,340  3175ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:31:06,345  3180ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:31:06,359  3194ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:31:06,364  3199ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 08:31:06,534  3369ms Worker                 CallSite.Target    - Background process 'Worker #c86872fa' started.
+DEBUG 2017-12-22 08:31:06,550  3385ms Worker                 CallSite.Target    - Background process 'Worker #37dfc1a7' started.
+DEBUG 2017-12-22 08:31:06,574  3409ms Worker                 CallSite.Target    - Background process 'Worker #3a08191a' started.
+DEBUG 2017-12-22 08:31:06,580  3415ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:31:06,733  3567ms Worker                 CallSite.Target    - Background process 'Worker #e307f9cb' started.
+DEBUG 2017-12-22 08:31:06,757  3591ms Worker                 CallSite.Target    - Background process 'Worker #5c937926' started.
+DEBUG 2017-12-22 08:31:06,842  3676ms Worker                 CallSite.Target    - Background process 'Worker #f3d076de' started.
+DEBUG 2017-12-22 08:31:06,882  3716ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:31:06,883  3717ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:31:06,957  3791ms Worker                 CallSite.Target    - Background process 'Worker #0cb78f9f' started.
+DEBUG 2017-12-22 08:31:07,004  3838ms Worker                 CallSite.Target    - Background process 'Worker #dbb92160' started.
+DEBUG 2017-12-22 08:31:07,042  3876ms Worker                 CallSite.Target    - Background process 'Worker #17f90e85' started.
+DEBUG 2017-12-22 08:31:07,103  3937ms Worker                 CallSite.Target    - Background process 'Worker #807db740' started.
+DEBUG 2017-12-22 08:31:07,111  3945ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:31:07,112  3946ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:31:07,174  4008ms Worker                 CallSite.Target    - Background process 'Worker #46127d9a' started.
+DEBUG 2017-12-22 08:31:07,249  4083ms Worker                 CallSite.Target    - Background process 'Worker #3aea6c72' started.
+DEBUG 2017-12-22 08:31:07,296  4130ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:31:07,296  4130ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:31:07,299  4133ms Worker                 CallSite.Target    - Background process 'Worker #8dfeae08' started.
+DEBUG 2017-12-22 08:31:07,302  4136ms Worker                 CallSite.Target    - Background process 'Worker #1799091c' started.
+DEBUG 2017-12-22 08:31:07,434  4269ms Worker                 CallSite.Target    - Background process 'Worker #37873d49' started.
+DEBUG 2017-12-22 08:31:07,502  4337ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:31:07,502  4337ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:31:07,506  4341ms Worker                 CallSite.Target    - Background process 'Worker #14fee799' started.
+DEBUG 2017-12-22 08:31:07,561  4396ms Worker                 CallSite.Target    - Background process 'Worker #3e55a7e1' started.
+DEBUG 2017-12-22 08:31:07,624  4459ms Worker                 CallSite.Target    - Background process 'Worker #f37d3738' started.
+DEBUG 2017-12-22 08:31:07,674  4509ms Worker                 CallSite.Target    - Background process 'Worker #eb8859de' started.
+DEBUG 2017-12-22 08:31:07,712  4547ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+DEBUG 2017-12-22 08:31:07,715  4550ms Worker                 CallSite.Target    - Background process 'Worker #9d0a1dcc' started.
+DEBUG 2017-12-22 08:31:07,773  4608ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:31:07,808  4643ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+INFO  2017-12-22 08:31:15,322 12156ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 08:31:15
+ERROR 2017-12-22 08:31:18,516 15350ms tyLogRepositoryCommand CreateActivityLog  - System.InvalidOperationException: The model backing the 'APPContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\CoreRepositories\RepositoryCommand.cs:line 96
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\Service\ActivityLogRepositoryCommand.cs:line 93
+INFO  2017-12-22 08:40:51,756   204ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:40:51 >>>>>>
+INFO  2017-12-22 08:40:53,785  2232ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:40:53 >>>>>>
+INFO  2017-12-22 08:40:54,071  2518ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:40:54,237  2684ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:40:54,294  2741ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:40:54,319  2766ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:40:54,321  2768ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:40:54,321  2768ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:40:54,330  2777ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:40:54,332  2779ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:40:54,333  2780ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:40:54,334  2781ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:40:54,334  2781ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:40:54,400  2848ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:40:54,891  3339ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:40:54,906  3354ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 08:40:54,945  3393ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:40:54,951  3399ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:40:55,035  3482ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:40:55,039  3486ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+INFO  2017-12-22 08:40:55,104  3551ms ServerWatchdog         CallSite.Target    - 2 servers were removed due to timeout
+DEBUG 2017-12-22 08:40:55,111  3558ms Worker                 CallSite.Target    - Background process 'Worker #3f8f33a7' started.
+DEBUG 2017-12-22 08:40:55,129  3576ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:40:55,191  3638ms Worker                 CallSite.Target    - Background process 'Worker #9f4bf240' started.
+DEBUG 2017-12-22 08:40:55,230  3677ms Worker                 CallSite.Target    - Background process 'Worker #6e5dbbd5' started.
+DEBUG 2017-12-22 08:40:55,252  3699ms Worker                 CallSite.Target    - Background process 'Worker #a9aecdfd' started.
+DEBUG 2017-12-22 08:40:55,326  3773ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:40:55,327  3774ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:40:55,373  3820ms Worker                 CallSite.Target    - Background process 'Worker #30ec8cfc' started.
+DEBUG 2017-12-22 08:40:55,391  3838ms Worker                 CallSite.Target    - Background process 'Worker #092d29e9' started.
+DEBUG 2017-12-22 08:40:55,450  3897ms Worker                 CallSite.Target    - Background process 'Worker #2e4c1329' started.
+DEBUG 2017-12-22 08:40:55,530  3977ms Worker                 CallSite.Target    - Background process 'Worker #d08f6917' started.
+DEBUG 2017-12-22 08:40:55,606  4053ms Worker                 CallSite.Target    - Background process 'Worker #a1971dd0' started.
+DEBUG 2017-12-22 08:40:55,610  4057ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:40:55,613  4060ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:40:55,706  4153ms Worker                 CallSite.Target    - Background process 'Worker #cf77e131' started.
+DEBUG 2017-12-22 08:40:55,758  4205ms Worker                 CallSite.Target    - Background process 'Worker #726060ac' started.
+DEBUG 2017-12-22 08:40:55,842  4290ms Worker                 CallSite.Target    - Background process 'Worker #d7ff9b95' started.
+DEBUG 2017-12-22 08:40:55,866  4314ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:40:55,867  4315ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:40:55,944  4392ms Worker                 CallSite.Target    - Background process 'Worker #2fb90ccd' started.
+DEBUG 2017-12-22 08:40:56,026  4474ms Worker                 CallSite.Target    - Background process 'Worker #b5234e42' started.
+DEBUG 2017-12-22 08:40:56,081  4529ms Worker                 CallSite.Target    - Background process 'Worker #6a0289b4' started.
+DEBUG 2017-12-22 08:40:56,105  4553ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:40:56,106  4554ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:40:56,119  4567ms Worker                 CallSite.Target    - Background process 'Worker #6c3901b6' started.
+DEBUG 2017-12-22 08:40:56,171  4619ms Worker                 CallSite.Target    - Background process 'Worker #ea32f1d1' started.
+DEBUG 2017-12-22 08:40:56,313  4761ms Worker                 CallSite.Target    - Background process 'Worker #456c546f' started.
+DEBUG 2017-12-22 08:40:56,338  4786ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+DEBUG 2017-12-22 08:40:56,351  4799ms Worker                 CallSite.Target    - Background process 'Worker #52025485' started.
+DEBUG 2017-12-22 08:40:56,386  4833ms Worker                 CallSite.Target    - Background process 'Worker #c6d53f5c' started.
+DEBUG 2017-12-22 08:40:56,455  4902ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:40:56,498  4945ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+INFO  2017-12-22 08:41:25,333 33780ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 08:41:25
+ERROR 2017-12-22 08:41:30,508 38955ms tyLogRepositoryCommand CreateActivityLog  - System.Data.SqlClient.SqlException (0x80131904): There is already an object named 'ActivityLog' in the database.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteSql(MigrationStatement migrationStatement, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinTransaction(IEnumerable`1 migrationStatements, DbTransaction transaction, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinNewTransaction(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection)
+   at System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClass30.<ExecuteStatements>b__2e()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements, DbTransaction existingTransaction)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements)
+   at System.Data.Entity.Migrations.DbMigrator.ExecuteOperations(String migrationId, VersionedModel targetModel, IEnumerable`1 operations, IEnumerable`1 systemOperations, Boolean downgrading, Boolean auto)
+   at System.Data.Entity.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration)
+   at System.Data.Entity.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId)
+   at System.Data.Entity.Migrations.DbMigrator.UpdateInternal(String targetMigration)
+   at System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClassc.<Update>b__b()
+   at System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)
+   at System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)
+   at System.Data.Entity.MigrateDatabaseToLatestVersion`2.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at SleekSoftMVCFramework.Repository.CoreRepositories.RepositoryCommand`2.Insert(TEntity entity) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\CoreRepositories\RepositoryCommand.cs:line 96
+   at SleekSoftMVCFramework.Repository.ActivityLogRepositoryCommand.CreateActivityLog(String descriptn, String moduleName, String moduleAction, Int64 userid, Object record) in C:\Users\afadipe\Documents\Visual Studio 2015\Projects\VanHackForum\SleekSoftMVCFramework.Repository\Service\ActivityLogRepositoryCommand.cs:line 93
+ClientConnectionId:291566fe-a559-4d5c-83c7-a07cb48c21bb
+Error Number:2714,State:6,Class:16
+INFO  2017-12-22 08:52:40,976   165ms                        Application_Start  -  <<<< Staring ::: SleekSoft Framework checking Startup Config Setting @ : 12/22/2017 08:52:40 >>>>>>
+INFO  2017-12-22 08:52:42,735  1924ms                        Application_Start  -  <<<< Ending ::: SleekSoft Framework Startup Config Setting ok @ : 12/22/2017 08:52:42 >>>>>>
+INFO  2017-12-22 08:52:42,969  2157ms SqlServerStorage       CallSite.Target    - Start installing Hangfire SQL objects...
+INFO  2017-12-22 08:52:43,251  2439ms SqlServerStorage       CallSite.Target    - Hangfire SQL objects installed.
+INFO  2017-12-22 08:52:43,311  2499ms BackgroundJobServer    CallSite.Target    - Starting Hangfire Server
+INFO  2017-12-22 08:52:43,322  2510ms BackgroundJobServer    CallSite.Target    - Using job storage: 'SQL Server: L-AFADIPE\MSSQL14@VHForum'
+INFO  2017-12-22 08:52:43,323  2511ms BackgroundJobServer    CallSite.Target    - Using the following options for SQL Server job storage:
+INFO  2017-12-22 08:52:43,323  2511ms BackgroundJobServer    CallSite.Target    -     Queue poll interval: 00:00:15.
+INFO  2017-12-22 08:52:43,324  2512ms BackgroundJobServer    CallSite.Target    - Using the following options for Hangfire Server:
+INFO  2017-12-22 08:52:43,324  2512ms BackgroundJobServer    CallSite.Target    -     Worker count: 20
+INFO  2017-12-22 08:52:43,324  2512ms BackgroundJobServer    CallSite.Target    -     Listening queues: 'default'
+INFO  2017-12-22 08:52:43,325  2513ms BackgroundJobServer    CallSite.Target    -     Shutdown timeout: 00:00:15
+INFO  2017-12-22 08:52:43,325  2513ms BackgroundJobServer    CallSite.Target    -     Schedule polling interval: 00:00:15
+DEBUG 2017-12-22 08:52:43,365  2553ms groundProcessingServer CallSite.Target    - Background process 'BackgroundProcessingServer' started.
+DEBUG 2017-12-22 08:52:43,788  2977ms ServerHeartbeat        CallSite.Target    - Background process 'ServerHeartbeat' started.
+DEBUG 2017-12-22 08:52:43,857  3046ms ServerWatchdog         CallSite.Target    - Background process 'ServerWatchdog' started.
+DEBUG 2017-12-22 08:52:43,913  3102ms CountersAggregator     CallSite.Target    - Background process 'Hangfire.SqlServer.CountersAggregator' started.
+DEBUG 2017-12-22 08:52:43,914  3103ms ExpirationManager      CallSite.Target    - Background process 'Hangfire.SqlServer.ExpirationManager' started.
+DEBUG 2017-12-22 08:52:43,917  3106ms CountersAggregator     CallSite.Target    - Aggregating records in 'Counter' table...
+DEBUG 2017-12-22 08:52:43,919  3108ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2017-12-22 08:52:43,927  3116ms Worker                 CallSite.Target    - Background process 'Worker #af3f0cf5' started.
+DEBUG 2017-12-22 08:52:43,989  3178ms CountersAggregator     CallSite.Target    - Records from the 'Counter' table aggregated.
+DEBUG 2017-12-22 08:52:43,991  3180ms Worker                 CallSite.Target    - Background process 'Worker #c3d289c5' started.
+DEBUG 2017-12-22 08:52:44,073  3262ms Worker                 CallSite.Target    - Background process 'Worker #bdc02cfb' started.
+DEBUG 2017-12-22 08:52:44,132  3321ms Worker                 CallSite.Target    - Background process 'Worker #b9823ea4' started.
+DEBUG 2017-12-22 08:52:44,167  3356ms Worker                 CallSite.Target    - Background process 'Worker #0da19943' started.
+DEBUG 2017-12-22 08:52:44,213  3402ms Worker                 CallSite.Target    - Background process 'Worker #e1fe12c6' started.
+DEBUG 2017-12-22 08:52:44,308  3497ms Worker                 CallSite.Target    - Background process 'Worker #221969ed' started.
+DEBUG 2017-12-22 08:52:44,348  3536ms Worker                 CallSite.Target    - Background process 'Worker #a10a1016' started.
+DEBUG 2017-12-22 08:52:44,352  3540ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2017-12-22 08:52:44,352  3540ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Job' table...
+DEBUG 2017-12-22 08:52:44,417  3605ms Worker                 CallSite.Target    - Background process 'Worker #33c61ace' started.
+DEBUG 2017-12-22 08:52:44,498  3686ms Worker                 CallSite.Target    - Background process 'Worker #8927f843' started.
+DEBUG 2017-12-22 08:52:44,554  3742ms Worker                 CallSite.Target    - Background process 'Worker #172035b3' started.
+DEBUG 2017-12-22 08:52:44,565  3753ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Job' table.
+DEBUG 2017-12-22 08:52:44,565  3753ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'List' table...
+DEBUG 2017-12-22 08:52:44,611  3799ms Worker                 CallSite.Target    - Background process 'Worker #e8c0c3d4' started.
+DEBUG 2017-12-22 08:52:44,650  3838ms Worker                 CallSite.Target    - Background process 'Worker #d444d46f' started.
+DEBUG 2017-12-22 08:52:44,743  3931ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'List' table.
+DEBUG 2017-12-22 08:52:44,743  3931ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Set' table...
+DEBUG 2017-12-22 08:52:44,746  3934ms Worker                 CallSite.Target    - Background process 'Worker #73710e20' started.
+DEBUG 2017-12-22 08:52:44,769  3957ms Worker                 CallSite.Target    - Background process 'Worker #4b4fd34b' started.
+DEBUG 2017-12-22 08:52:44,832  4020ms Worker                 CallSite.Target    - Background process 'Worker #03b67fd9' started.
+DEBUG 2017-12-22 08:52:44,902  4090ms Worker                 CallSite.Target    - Background process 'Worker #e337ee8e' started.
+DEBUG 2017-12-22 08:52:44,972  4160ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Set' table.
+DEBUG 2017-12-22 08:52:44,975  4163ms ExpirationManager      CallSite.Target    - Removing outdated records from the 'Hash' table...
+DEBUG 2017-12-22 08:52:44,976  4164ms Worker                 CallSite.Target    - Background process 'Worker #fa4b34b9' started.
+DEBUG 2017-12-22 08:52:45,032  4220ms Worker                 CallSite.Target    - Background process 'Worker #044e13f9' started.
+DEBUG 2017-12-22 08:52:45,034  4222ms Worker                 CallSite.Target    - Background process 'Worker #5862aff9' started.
+DEBUG 2017-12-22 08:52:45,083  4272ms DelayedJobScheduler    CallSite.Target    - Background process 'DelayedJobScheduler' started.
+DEBUG 2017-12-22 08:52:45,140  4329ms RecurringJobScheduler  CallSite.Target    - Background process 'RecurringJobScheduler' started.
+DEBUG 2017-12-22 08:52:45,190  4379ms ExpirationManager      CallSite.Target    - Outdated records removed from the 'Hash' table.
+INFO  2017-12-22 08:53:24,456 43645ms meworkConfigController Index              - SleekSoft MVC Framework Config checked @ : 12/22/2017 08:53:24
+INFO  2017-12-22 08:55:00,863 140052ms HangFireLoggerAppender OnCreating         - Creating a job based on method `Execute`...
+INFO  2017-12-22 08:55:01,654 140843ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `` was unapplied.
+INFO  2017-12-22 08:55:01,656 140845ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from  to Enqueued
+INFO  2017-12-22 08:55:02,406 141594ms HangFireLoggerAppender OnCreated          - Job that is based on method `Execute` has been created with id `1`
+INFO  2017-12-22 08:55:02,565 141753ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `Enqueued` was unapplied.
+INFO  2017-12-22 08:55:02,566 141754ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from Enqueued to Processing
+INFO  2017-12-22 08:55:02,743 141931ms HangFireLoggerAppender OnPerforming       - Starting to perform job `1`
+INFO  2017-12-22 08:55:14,347 153536ms HangFireLoggerAppender OnPerformed        - Job `1` has been performed
+INFO  2017-12-22 08:55:14,423 153612ms HangFireLoggerAppender OnStateUnapplied   - Job `1` state `Processing` was unapplied.
+INFO  2017-12-22 08:55:14,424 153613ms HangFireLoggerAppender OnStateApplied     - Job 1 state was changed from Processing to Succeeded
+INFO  2017-12-22 08:56:01,038 200227ms HangFireLoggerAppender OnCreating         - Creating a job based on method `Execute`...
+INFO  2017-12-22 08:56:01,142 200331ms HangFireLoggerAppender OnStateUnapplied   - Job `2` state `` was unapplied.
+INFO  2017-12-22 08:56:01,143 200332ms HangFireLoggerAppender OnStateApplied     - Job 2 state was changed from  to Enqueued
+INFO  2017-12-22 08:56:01,911 201099ms HangFireLoggerAppender OnCreated          - Job that is based on method `Execute` has been created with id `2`
+INFO  2017-12-22 08:56:02,032 201220ms HangFireLoggerAppender OnStateUnapplied   - Job `2` state `Enqueued` was unapplied.
+INFO  2017-12-22 08:56:02,032 201220ms HangFireLoggerAppender OnStateApplied     - Job 2 state was changed from Enqueued to Processing
+INFO  2017-12-22 08:56:02,188 201377ms HangFireLoggerAppender OnPerforming       - Starting to perform job `2`
+INFO  2017-12-22 08:56:09,042 208230ms HangFireLoggerAppender OnPerformed        - Job `2` has been performed
+INFO  2017-12-22 08:56:09,123 208311ms HangFireLoggerAppender OnStateUnapplied   - Job `2` state `Processing` was unapplied.
+INFO  2017-12-22 08:56:09,124 208312ms HangFireLoggerAppender OnStateApplied     - Job 2 state was changed from Processing to Succeeded
+INFO  2017-12-22 08:57:00,596 259784ms HangFireLoggerAppender OnCreating         - Creating a job based on method `Execute`...
+INFO  2017-12-22 08:57:00,808 259996ms HangFireLoggerAppender OnStateUnapplied   - Job `3` state `` was unapplied.
+INFO  2017-12-22 08:57:00,809 259997ms HangFireLoggerAppender OnStateApplied     - Job 3 state was changed from  to Enqueued
+INFO  2017-12-22 08:57:00,992 260180ms HangFireLoggerAppender OnCreated          - Job that is based on method `Execute` has been created with id `3`
+INFO  2017-12-22 08:57:01,257 260446ms HangFireLoggerAppender OnStateUnapplied   - Job `3` state `Enqueued` was unapplied.
+INFO  2017-12-22 08:57:01,260 260449ms HangFireLoggerAppender OnStateApplied     - Job 3 state was changed from Enqueued to Processing
+INFO  2017-12-22 08:57:01,530 260719ms HangFireLoggerAppender OnPerforming       - Starting to perform job `3`

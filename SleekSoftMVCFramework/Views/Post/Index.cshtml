@@ -1,0 +1,278 @@
+﻿
+@using SleekSoftMVCFramework.ViewModel
+@using SleekSoftMVCFramework.Utilities
+@model ActivePostsViewModel
+@{
+    ViewBag.Title = "Post";
+    //Layout = "~/Views/Shared/_APPLayout.cshtml";
+    Layout = "~/Views/Shared/_APPPartial.cshtml";
+    var totalCount = Convert.ToInt32(Model.TotalCount);
+}
+
+
+@Html.Partial("_ToastrViewHeader")
+
+<section class="content">
+
+    <div class="row">
+
+
+        @Html.Partial("_LeftSideMenu")
+        <!-- /.col -->
+        <div class="col-md-9">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="activity">
+                      
+                        @Html.Partial("_TopicPostDetails", Model.TopicViewModel)
+
+                        @foreach (var post in Model.Posts)
+                        {
+                            Html.RenderPartial("_Post", post);
+                        }
+
+                        @Html.Partial("_PostComment", Model.PostCommentViewModel)
+                        <br />
+                        <hr />
+                        <hr />
+                        @if (Model.TotalPages > 1)
+                        {
+                            @Html.Pager(Convert.ToInt32(Model.PageIndex), 10, totalCount, null, "Index", "Post")
+                        }
+
+
+                    </div>
+
+                </div>
+                <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="addedit_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="addedit_modal_body">
+            </div>
+        </div>
+    </div>
+    <!--Delete User-->
+    <div class="modal fade" id="delete_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="delete_content">
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(".votelink").click(function (e) {
+        e.preventDefault();
+        var voteLink = $(this);
+        var postId = voteLink.data("id");
+        var voteType = voteLink.data("votetype");
+        var hasVoted = voteLink.data("hasvoted");
+        console.log('Vote hasVoted:  ' + hasVoted);
+        var checker = '#' + postId;
+        console.log('checker' + checker)
+        var votePoints =$('#'+postId);
+        console.log('span points using text' + votePoints.text())
+        console.log('span points using html' + votePoints.html())
+
+        var voteText = $('#Display'+postId);
+        console.log('span vote Text using text' + voteText.text())
+        console.log('span vote Tex using html' + voteText.html())
+
+        var voteViewModel = new Object();
+        voteViewModel.PostId = postId;
+
+        var voteUrl = "Vote/VoteDownPost";
+        console.log('Vote Type:  ' + voteType);
+        if (voteType == "up") {
+            voteUrl = "Vote/VoteUpPost";
+        }
+        console.log('Vote Url:  ' + voteUrl);
+        // We do the show hide/change of votes here for speed in the UI
+        // Change the number up or down
+        var currentPoints = parseInt(votePoints.text());
+        console.log('Vote currentPoints:  ' + currentPoints);
+        if (hasVoted==1) {
+            // They are removing their vote
+            var currentvalue = (currentPoints - 1);
+            console.log('Vote New Points:  ' + currentvalue);
+            votePoints.text(currentvalue);
+          
+            voteText.text("Like");
+            // Change has voted to false
+            voteLink.data('hasvoted', 0);
+        } else {
+            // They add adding a vote
+            var currentvalue = (currentPoints + 1);
+            console.log('Vote New Points:  ' + currentvalue);
+            votePoints.text(currentvalue);
+            voteText.text("Liked");
+            // Change has voted to false
+            voteLink.data('hasvoted', 1);
+        }
+
+        // Ajax call to post the view model to the controller
+        var strung = JSON.stringify(voteViewModel);
+
+        $.ajax({
+            url: voteUrl,
+            type: "POST",
+            cache: false,
+            data: strung,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+                if (voteType == "up") {
+                } else {
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                ShowUserMessage("Error: " + xhr.status + " " + thrownError);
+            }
+        });
+    });
+    
+
+    $(".followlink").click(function (e) {
+        e.preventDefault();
+        var followLink = $(this);
+        var topicId = followLink.data("id");
+        console.log('Topic Id :  ' + topicId);
+
+        var unfollowa = $('#aunfollowlink');
+        console.log('Unfollow anchor Id using text ' + unfollowa.text())
+        console.log('span vote Tex using html' + unfollowa.html())
+
+        var followViewModel = new Object();
+        followViewModel.TopicId = topicId;
+
+        var followUrl = "Vote/followTopic";
+        console.log('Follow Topic Url:  ' + followUrl);
+
+        followLink.hide();
+        //$('a.ClassName').css({ 'display': 'block'});
+        unfollowa.show();
+        // Ajax call to post the view model to the controller
+        var strung = JSON.stringify(followViewModel);
+
+        $.ajax({
+            url: followUrl,
+            type: "POST",
+            cache: false,
+            data: strung,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                toastr.error("Error: " + xhr.status + " " + thrownError);
+            }
+        });
+    });
+
+
+    $(".unfollowlink").click(function (e) {
+        e.preventDefault();
+        var followLink = $(this);
+        var topicId = followLink.data("id");
+        console.log('Topic Id :  ' + topicId);
+
+        var followa = $('#followlink');
+        console.log('Unfollow anchor Id using text ' + followa.text())
+        console.log('span vote Tex using html' + followa.html())
+
+        var followViewModel = new Object();
+        followViewModel.TopicId = topicId;
+
+        var followUrl = "Vote/UnFollowTopic";
+        console.log('Follow Topic Url:  ' + followUrl);
+
+        followLink.show();
+        //$('a.ClassName').css({ 'display': 'block'});
+        followa.hide();
+        // Ajax call to post the view model to the controller
+        var strung = JSON.stringify(followViewModel);
+
+        $.ajax({
+            url: followUrl,
+            type: "POST",
+            cache: false,
+            data: strung,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                toastr.error("Error: " + xhr.status + " " + thrownError);
+            }
+        });
+    });
+
+
+    $(function () {
+        function bindForm(dialog) {
+            $("form", dialog).submit(function () {
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: $(this).serialize(),
+                    success: function (result) {
+                        if (result.success) {
+                            $('#addedit_modal').modal("hide");
+                            // Refresh:
+                            location.reload();
+
+                        } else {
+
+                            $('#addedit_modal_body').html(result);
+                            bindForm();
+                        }
+                    }, error: function (request, status, error) {
+                        alert(JSON.stringify(error));
+                    }
+                });
+
+
+                return false;
+            });
+        }
+
+        //Load the edit page
+        $(".editBtn").click(function () {
+
+            url = '@Url.Action("Edit", "Post", new {id = "_id_" })'.replace('_id_', $(this).data("edit-id"));
+            console.log(url);
+
+            $("#addedit_modal_body").load(url, function (responseTxt, statusTxt, xhr) {
+                $("#addedit_modal").modal({
+                    backdrop: 'static',
+                    keyboard: true
+                }, "show");
+                bindForm(this);
+            });
+            return false;
+        });
+
+
+      
+
+
+    });
+</script>
+
+
+
+
+

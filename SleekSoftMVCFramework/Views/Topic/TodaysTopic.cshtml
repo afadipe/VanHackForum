@@ -1,0 +1,138 @@
+﻿
+
+@using SleekSoftMVCFramework.ViewModel
+@using SleekSoftMVCFramework.Utilities
+@model ActiveTopicsViewModel
+@{
+    Layout = "~/Views/Shared/_APPPartial.cshtml";
+    ViewBag.Title = "Todays Topic";
+    var totalCount = Convert.ToInt32(Model.TotalCount);
+}
+
+
+
+
+@Html.Partial("_ToastrViewHeader")
+
+<section class="content-header">
+    <h1>
+        Vanhack Forum
+        <small>Todays Topic</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Vanhack Forum</a></li>
+        <li class="active">Todays Topic</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+
+    <div class="row">
+
+        @Html.Partial("_LeftSideMenu")
+        <!-- /.col -->
+        <div class="col-md-9">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="activity">
+
+                        @foreach (var topic in Model.Topics)
+                        {
+                            Html.RenderPartial("_Topic", topic);
+                        }
+                        @if (Model.TotalPages > 1)
+                        {
+                            @Html.Pager(Convert.ToInt32(Model.PageIndex),10, totalCount, null, "TodaysTopic", "Topic")
+                        }
+
+
+                    </div>
+
+                </div>
+                <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="addedit_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="addedit_modal_body">
+        </div>
+    </div>
+</div>
+<!--Delete User-->
+<div class="modal fade" id="delete_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" id="delete_content">
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        //Load the edit page
+        function bindForm(dialog) {
+            $("form", dialog).submit(function () {
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: new FormData(this),
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        if (result.success) {
+                            $('#addedit_modal').modal("hide");
+                            // Refresh:
+                            location.reload();
+
+                        } else {
+
+                            $('#addedit_modal_body').html(result);
+                            bindForm();
+                        }
+                    }, error: function (request, status, error) {
+                        alert(JSON.stringify(error));
+                    }
+                });
+
+
+                return false;
+            });
+        }
+
+        //Load the edit page
+
+
+
+         $(".btn_addTopic").click(function () {
+
+            url = "@Url.Action("Create", "Topic", new { area = "" })";
+            console.log(url);
+
+            $("#addedit_modal_body").load(url, function () {
+                $("#addedit_modal").modal({
+                    backdrop: 'static',
+                    keyboard: true
+                }, "show");
+                bindForm(this);
+            });
+            return false;
+        });
+
+    });
+
+</script>
+
+
+
+

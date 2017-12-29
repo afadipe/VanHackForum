@@ -1,0 +1,130 @@
+﻿
+@model SleekSoftMVCFramework.ViewModel.TopicViewModel
+
+@{
+    ViewBag.Title = "Topic";
+    Layout = null;
+}
+
+<div class="modal-content">
+    <!-- Begin page heading -->
+
+    @using (Html.BeginForm((string)ViewBag.PostAction, "Topic", new { area = "" }, FormMethod.Post, new
+    {
+        @class = "form-horizontal",
+        role = "form"
+    }))
+
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.Id)
+
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h1 class="page-heading" id="myModalLabel">@ViewBag.ModalTitle Topic</h1>
+        </div>
+        <div class="modal-body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-sm-3" })
+                <div class="col-sm-9">
+                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", required = true } })
+                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @if (Model.Id.GetValueOrDefault() > 0)
+            {
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-sm-3" })
+                    <div class="col-sm-9">
+                        <textarea id="Description" class="form-control" name="Description">@Model.Description</textarea>
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-sm-3" })
+                    <div class="col-sm-9">
+                        <textarea id="Description" class="form-control" name="Description"></textarea>
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            }
+
+            @if (Model.Id.GetValueOrDefault() > 0)
+            {
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PostContent, htmlAttributes: new { @class = "control-label col-sm-3" })
+                    <div class="col-sm-9">
+                        <textarea id="PostContent" class="form-control" name="Description">@Model.PostContent</textarea>
+                        @Html.ValidationMessageFor(model => model.PostContent, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PostContent, htmlAttributes: new { @class = "control-label col-sm-3" })
+                    <div class="col-sm-9">
+                        <textarea id="PostContent" class="form-control" name="PostContent"></textarea>
+                        @Html.ValidationMessageFor(model => model.PostContent, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            }
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.CategoryId, htmlAttributes: new { @class = "control-label col-sm-3" })
+                <div class="col-sm-9">
+                    @Html.DropDownListFor(m => m.CategoryId, Model.Categorys, "--Please Select--", new
+               {
+                   @class = "form-control select2"
+               })
+
+                </div>
+
+            </div>
+
+
+            @if (Model.Id.GetValueOrDefault() > 0)
+            {
+                if (!string.IsNullOrEmpty(Model.TopicImage))
+                {
+                    <small>Topic Image</small>
+                    <div class="fileinput @ViewBag.ImageProperty" data-provides="fileinput">
+                        <div class="fileinput-new thumbnail" style="width: 200px; height: 100px;">
+                            @if (Model.TopicImage != null)
+                        {
+                                <img src="@Url.Content("~/FileUploadedDoc/" + Model.TopicImage)" alt="...">
+                            }
+                        </div>
+                    </div>
+
+                }
+
+                <div class="form-group">
+                    <small>Topic Image</small>
+                    <input type="file" name="profileImage">
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <small>Topic Image</small>
+                    <input type="file" name="profileImage">
+                </div>
+            }
+        </div>
+        <!-- /.row -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-info">@ViewBag.ButtonAction</button>
+        </div>
+    }
+
+
+</div>

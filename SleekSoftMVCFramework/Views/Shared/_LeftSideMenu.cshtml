@@ -1,0 +1,76 @@
+﻿
+@using SleekSoftMVCFramework.Utilities
+@{
+
+    var  topiccategory= new List<SleekSoftMVCFramework.Data.AppEntities.TopicCategory>();
+
+    using (SleekSoftMVCFramework.Data.APPContext db = new SleekSoftMVCFramework.Data.APPContext())
+    {
+        topiccategory = db.TopicCategories.ToList();
+    }
+ }
+<div class="col-md-3">
+
+    <!-- Profile Image -->
+    <div class="box box-primary">
+        @if (Request.IsAuthenticated)
+        {
+            <a data-target='#addedit_modal' role="button" class="btn btn-primary  btn-block btn_addTopic" data-toggle="modal"><b>New Topic</b></a>
+        }
+        else
+        {
+            <a class="btn btn-primary  btn-block" href="@Url.Action("CreateTopic","Topic")"><b>New Topic</b></a>
+        }
+       
+    </div>
+    <hr />
+    <!-- /.box -->
+    <!-- About Me Box -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Threading</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <ul class="list-group list-group-unbordered">
+
+                <li class="list-group-item">
+                    <a href="@Url.Action("TodaysTopic","Topic")"><b>Todays Topics</b> </a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="@Url.Action("HighestViewedTopics","Topic")"><b>Highest Viewed Topics</b> </a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="@Url.Action("Index","Home")"><b>All Topics</b> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Topic Category</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <ul class="list-group list-group-unbordered">
+
+                @if (topiccategory.Any())
+                {
+                    foreach (SleekSoftMVCFramework.Data.AppEntities.TopicCategory topicCategoryVm in topiccategory)
+                    {
+                        <li class="list-group-item">
+                            <a href="@Url.Action("TopicByCategory","Topic", new { code=topicCategoryVm.Id.EncryptIntID() })"><b> @topicCategoryVm.Title </b> </a>
+                        </li>
+                    }
+                }
+               
+            </ul>
+        </div>
+
+    </div>
+    <!-- /.box -->
+</div>
+

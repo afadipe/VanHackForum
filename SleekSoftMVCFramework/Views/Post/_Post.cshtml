@@ -1,0 +1,61 @@
+﻿
+@model SleekSoftMVCFramework.ViewModel.PostViewModel
+@using SleekSoftMVCFramework.Utilities
+@using Microsoft.AspNet.Identity
+@using SleekSoftMVCFramework.Data.IdentityService.Extensions
+@using System.Security.Claims
+
+<div class="post">
+    <div class="user-block">
+        @if (Model.CreateByAvatar == null)
+        {
+            <img class="img-circle img-bordered-sm" src="@Url.Content("~/img/user2-160x160.jpg")" alt="@Model.CreateByUserName">
+        }
+        else if (Model.CreateByAvatar != null)
+        {
+            <img class="img-circle img-bordered-sm" src="@Url.Content("~/FileUploadedDoc/" + Model.CreateByAvatar)" alt="@Model.CreateByUserName">
+        }
+        <span class="username">
+            <a href="#">@Model.CreateByUserName</a>
+        </span>
+        <span class="description"><b>@Model.CreateByUserName</b> Posted this on  @Html.Raw(@ExtentionUtility.GetPrettyDate(Model.DateCreated))  |  <b>IP Address</b>  @Model.IPAddress</span>
+    </div>
+
+    <p>@Model.Content</p>
+
+    <ul class="list-inline">
+        <li>
+            <a class="link-black text-sm votelink" data-id="@Model.Id" data-votetype="@Html.Raw(Model.HasVoted.GetValueOrDefault()==1 ? "down" : "up")" data-hasvoted="@Model.HasVoted.GetValueOrDefault()">
+                <i class="fa fa-thumbs-o-up margin-r-5"><span id="@Model.Id">@Model.PostLikeCount.GetValueOrDefault()</span></i> <span id="Display" + @Model.Id>@Html.Raw(Model.HasVoted.GetValueOrDefault() == 1 ? "Liked" : "Like")</span>
+            </a>
+        </li>
+        @if (User.Identity.GetUserId<long>() == Model.CreatedBy)
+        {
+
+            <li>
+                <a onclick="return confirm('Are you sure you want to delete this post')" href="@Url.Action("DeletePost", "Post", new { code = Model.Id.EncryptIntID() })">
+                    Delete
+                </a>
+            </li>
+
+            <li>
+                <a data-target='#addedit_modal' data-edit-id='@Html.DisplayFor(modelItem => Model.Id )' class='editBtn' data-toggle='modal'><b>Edit</b></a>
+            </li>
+        }
+
+    </ul>
+    <div class="pull-right">
+        @if (User.Identity.GetUserId<long>() == Model.CreatedBy)
+            {
+            <ul class="list-inline">
+                <li>
+                    
+                </li>
+               
+
+            </ul>
+        }
+    </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+﻿@using SleekSoftMVCFramework.ViewModel
+@using SleekSoftMVCFramework.Utilities
+@model ActiveTopicsViewModel
+@{
+    Layout = null;
+    var totalCount = Convert.ToInt32(Model.TotalCount);
+}
+
+
+@foreach (var topic in Model.Topics)
+{
+    Html.RenderPartial("_Topic", topic);
+}
+@if (Model.TotalPages > 1)
+{
+    @Html.Pager(Convert.ToInt32(Model.PageIndex), 3, totalCount, null, "Index", "Home")
+}
+
+

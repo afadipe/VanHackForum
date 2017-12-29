@@ -1,0 +1,27 @@
+﻿
+
+@model SleekSoftMVCFramework.ViewModel.PostCommentViewModel
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("SavePostComment", "Post", new { area = "" }, FormMethod.Post, new
+{
+    @class = "form-horizontal",
+    role = "form"
+}))
+
+{
+
+@Html.HiddenFor(m => m.TopicId)
+    <div class="form-group margin-bottom-none">
+        <div class="col-sm-9">
+            <input class="form-control input-lg"  type="text" id="PostComment"  name="PostComment" placeholder="Type a comment">
+        </div>
+        <div class="col-sm-3">
+            <button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Send</button>
+        </div>
+    </div>
+
+
+}
