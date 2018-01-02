@@ -573,6 +573,8 @@
     <Content Include="Content\toastr.min.css" />
     <Content Include="dll\LinqKit.dll" />
     <Content Include="favicon.ico" />
+    <Content Include="FileUploadedDoc\0ee486a2-00d0-4905-845d-499043bf6509.PNG" />
+    <Content Include="FileUploadedDoc\e9b77cf5-ec64-4899-9db0-379b8aa0d2a5.PNG" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfonte0a5.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
